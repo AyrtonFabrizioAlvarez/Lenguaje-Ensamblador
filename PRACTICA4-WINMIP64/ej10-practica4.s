@@ -18,4 +18,6 @@ distintos: lbu r1, cadena(r4)	; paso al proximo caracter de la cadena
 daddi r4, r4, 1					; para aumentar el desplazamiento
 j loop
 
-fin: halt
+
+fin: sd r3, cant(r0)
+halt

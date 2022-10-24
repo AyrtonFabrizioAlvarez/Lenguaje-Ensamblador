@@ -21,6 +21,7 @@ beq r1, r2, menor
 
 
 
+
 daddi r8, r0, 1				; r8 = 1
 daddi r3, r3, 1				; sumo 1 al total de elementos mayores que x
 sd r8, RES(r4)				; como es mayor a X, RES en esa posicion toma el valor 1
@@ -31,5 +32,6 @@ daddi r6, r6, -1			; resto 1 al total de elementos para saber cuando llego al fi
 ld r1, TABLA(r4) 			; voy al proximo elemento de la tabla
 bnez r6, loop 				; mientras no llegue al final vuelvo a LOOP
 
+sb r3, CANT(r0)
 
 halt
