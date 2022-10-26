@@ -1,17 +1,18 @@
 .data
 num1: .word 2.5
-num2: .word 5
+num2: .word 526
 
 
 .code
-ld f1, num1(r0)
+
 ld r1, num2(r0)
 
-mtcl r1, f2
+mtc1 r1, f3
+cvt.d.l f2, f3
 
-mfcl r2, f1
+;mfc1 r2, f1
 
-;cvt.d.l f3, f1
+
 
 ;cvt.l.d f4, f1
 
