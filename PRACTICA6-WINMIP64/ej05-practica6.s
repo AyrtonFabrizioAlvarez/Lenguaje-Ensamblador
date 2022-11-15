@@ -44,4 +44,3 @@ daddi $t0, $0, 3
 sd $t0, 0($s1)
 
 jr $ra
-
